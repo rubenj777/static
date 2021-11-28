@@ -1,0 +1,153 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  line-height: 2em;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC";
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 2px darksalmon;
+  color: darksalmon;
+  padding: 5px 10px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 50px;
+}
+
+/********* HEADER ********/
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/pyramides.jpeg);
+  height: 100vh;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+header nav ul {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+header h1 {
+  font-size: 4em;
+}
+
+header nav ul li {
+  margin: 0px 10px;
+}
+
+header ul li a {
+  color: white;
+}
+
+/******* CSS PAR SECTION ********/
+
+/* DESTINATION */
+
+#destination {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+#destination img {
+  width: 88%;
+}
+
+.paragraphe-destination {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0px 50px 0px 100px;
+}
+
+.paragraphe-destination h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.paragraphe-destination li {
+  margin-top: 10px;
+}
+
+/* ABONNEMENTS */
+
+#abonnements {
+  display: flex;
+  flex-direction: column;
+}
+
+#abonnements h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+#formules-box ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0px;
+}
+
+#formules-box ul li {
+  border: 2px solid darksalmon;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin: 20px 0px;
+}
+
+#formules-box ul li span:first-of-type {
+  color: darksalmon;
+  font-size: 3em;
+}
+
+#formules-box ul li h3:first-of-type {
+  margin: 25px 0px;
+}
+
+#formules-box ul li p:first-of-type {
+  margin: 25px 0px;
+}
+
+/* CONCEPT */
+
+#concept {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 100px 0px;
+}
+
+#concept img {
+  width: 88%;
+}
+
+.paragraphe-concept {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0px 100px 0px 50px;
+}
+
+.paragraphe-concept h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}

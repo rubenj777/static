@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de voyage</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Candidater pour partir en voyage</h1>
+        <p>Notre société <strong>Evasion</strong> vous propose de découvrir en avant-première des lieux paradisiaques que nous souhaitons ajouter à notre catalogue. Merci de remplir les différents champs ci-dessous pour candidater au poste d'<strong>Evadiscover</strong>!</p>
+    </header>
+    
+    <section id="coordonnees">
+        <fieldset>
+            <legend>Coordonnées</legend>
+                <label for="email">Votre email (*) :</label>
+                <input type="email" name="email" id="email" placeholder="ruben@gmail.com"/>
+                <label for="tel">Votre téléphone :</label>
+                <input type="tel" name="tel" id="tel" placeholder="06 66 66 66 66" pattern="[0-9]{10}"/>
+        </fieldset>
+    </section>
+
+    <section id="infos-perso">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+                <div id="name-form">
+                    <label for="name">Votre nom :</label>
+                    <input type="text" name="name" id="nom" placeholder="Jallifier"/>
+                    <label for="name">Votre prénom :</label>
+                    <input type="text" name="name" id="prenom" placeholder="Ruben"/>
+                </div>
+
+            <hr>
+                <div id="gender">
+                    <p>Vous êtes :</p>
+                        <input type="radio" name="gender" id="homme">
+                        <label for="radio">Un homme</label>
+                        <input type="radio" name="gender" id="femme">
+                        <label for="radio">Une femme</label>
+                </div>
+
+            <hr>
+
+                <div id="localisation-form">
+                    <label for="adress">Votre adresse :</label>
+                    <input type="text" name="adress" id="adress" />
+                    <label for="postal-code">Votre code postal :</label>
+                    <input type="text" name="postal-code" id="postal-code" />
+                    <label for="town">Votre ville :</label>
+                    <input type="text" name="town" id="town" />
+                    <label for="departement">Votre département :</label>
+                        <select name="departement" id="departement">
+                            <option value="1">1 - Ain</option>
+                            <option value="2">2 - Aisne</option>
+                            <option value="3">3 - Allier</option>
+                            <option value="4">4 - Alpes-de-Haute-Provence</option>
+                            <option value="5">5 - Hautes-Alpes</option>
+                            <option value="6">6 - Alpes-Maritimes</option>
+                            <option value="7">7 - Ardèche</option>
+                            <option value="8">8 - Ardennes</option>
+                            <option value="9">9 - Ariège</option>
+                            <option value="10">10 - Aube</option>
+                            <option value="11">11 - Aude</option>
+                            <option value="12">12 - Aveyron</option>
+                            <option value="13">13 - Bouches-du-Rhône</option>
+                            <option value="14">14 - Calvados</option>
+                            <option value="15">15 - Cantal</option>
+                            <option value="16">16 - Charente</option>
+                            <option value="17">17 - Charente-Maritime</option>
+                            <option value="18">18 - Cher</option>
+                            <option value="19">19 - Corrèze</option>
+                            <option value="21">21 - Côte-d'Or</option>
+                            <option value="22">22 - Côtes-d'Armor</option>
+                            <option value="23">23 - Creuse</option>
+                            <option value="24">24 - Dordogne</option>
+                            <option value="25">25 - Doubs</option>
+                            <option value="26">26 - Drôme</option>
+                            <option value="27">27 - Eure</option>
+                            <option value="28">28 - Eure-et-Loir</option>
+                            <option value="29">29 - Finistère</option>
+                            <option value="2A">2A - Corse-du-Sud</option>
+                            <option value="2B">2B - Haute-Corse</option>
+                            <option value="30">30 - Gard</option>
+                            <option value="31">31 - Haute-Garonne</option>
+                            <option value="32">32 - Gers</option>
+                            <option value="33">33 - Gironde</option>
+                            <option value="34">34 - Hérault</option>
+                            <option value="35">35 - Ille-et-Vilaine</option>
+                            <option value="36">36 - Indre</option>
+                            <option value="37">37 - Indre-et-Loire</option>
+                            <option value="38">38 - Isère</option>
+                            <option value="39">39 - Jura</option>
+                            <option value="40">40 - Landes</option>
+                            <option value="41">41 - Loir-et-Cher</option>
+                            <option value="42">42 - Loire</option>
+                            <option value="43">43 - Haute-Loire</option>
+                            <option value="44">44 - Loire-Atlantique</option>
+                            <option value="45">45 - Loiret</option>
+                            <option value="46">46 - Lot</option>
+                            <option value="47">47 - Lot-et-Garonne</option>
+                            <option value="48">48 - Lozère</option>
+                            <option value="49">49 - Maine-et-Loire</option>
+                            <option value="50">50 - Manche</option>
+                            <option value="51">51 - Marne</option>
+                            <option value="52">52 - Haute-Marne</option>
+                            <option value="53">53 - Mayenne</option>
+                            <option value="54">54 - Meurthe-et-Moselle</option>
+                            <option value="55">55 - Meuse</option>
+                            <option value="56">56 - Morbihan</option>
+                            <option value="57">57 - Moselle</option>
+                            <option value="58">58 - Nièvre</option>
+                            <option value="59">59 - Nord</option>
+                            <option value="60">60 - Oise</option>
+                            <option value="61">61 - Orne</option>
+                            <option value="62">62 - Pas-de-Calais</option>
+                            <option value="63">63 - Puy-de-Dôme</option>
+                            <option value="64">64 - Pyrénées-Atlantiques</option>
+                            <option value="65">65 - Hautes-Pyrénées</option>
+                            <option value="66">66 - Pyrénées-Orientales</option>
+                            <option value="67">67 - Bas-Rhin</option>
+                            <option value="68">68 - Haut-Rhin</option>
+                            <option value="69">69 - Rhône</option>
+                            <option value="70">70 - Haute-Saône</option>
+                            <option value="71">71 - Saône-et-Loire</option>
+                            <option value="72">72 - Sarthe</option>
+                            <option value="73">73 - Savoie</option>
+                            <option value="74">74 - Haute-Savoie</option>
+                            <option value="75">75 - Paris</option>
+                            <option value="76">76 - Seine-Maritime</option>
+                            <option value="77">77 - Seine-et-Marne</option>
+                            <option value="78">78 - Yvelines</option>
+                            <option value="79">79 - Deux-Sèvres</option>
+                            <option value="80">80 - Somme</option>
+                            <option value="81">81 - Tarn</option>
+                            <option value="82">82 - Tarn-et-Garonne</option>
+                            <option value="83">83 - Var</option>
+                            <option value="84">84 - Vaucluse</option>
+                            <option value="85">85 - Vendée</option>
+                            <option value="86">86 - Vienne</option>
+                            <option value="87">87 - Haute-Vienne</option>
+                            <option value="88">88 - Vosges</option>
+                            <option value="89">89 - Yonne</option>
+                            <option value="90">90 - Territoire de Belfort</option>
+                            <option value="91">91 - Essonne</option>
+                            <option value="92">92 - Hauts-de-Seine</option>
+                            <option value="93">93 - Seine-Saint-Denis</option>
+                            <option value="94">94 - Val-de-Marne</option>
+                            <option value="95">95 - Val-d'Oise</option>
+                            <option value="971">971 - Guadeloupe</option>
+                            <option value="972">972 - Martinique</option>
+                            <option value="973">973 - Guyane</option>
+                            <option value="974">974 - La Réunion</option>
+                            <option value="976">976 - Mayotte</option>
+                        </select> 
+                </div>
+            <hr>
+
+
+            <p>Quel budget êtes-vous prêt à investir pour valider votre candidature ?</p>
+
+                <div id="budget-form">
+                    <label for="budget-range">Budget :</label>
+                    <span>200</span>
+                    <input type="range" id="budget-range" name="budget-range" min="200" max="3000" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50">
+                        <option value="60">
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100">
+                    </datalist>
+                    <span>3000</span>
+                </div>
+
+        </fieldset>
+    </section>
+
+
+    <section id="langages">
+        <fieldset>
+            <legend>Langues</legend>
+                <p>Merci de cocher toutes les langues que vous pratiquez :</p>
+                <input type="checkbox" id="anglais" name="anglais" checked>
+                <label for="anglais">Anglais</label>
+                <input type="checkbox" id="français" name="français">
+                <label for="français">Français</label>
+                <input type="checkbox" id="italien" name="italien">
+                <label for="italien">Italien</label>
+                <input type="checkbox" id="espagnol" name="espagnol">
+                <label for="espagnol">Espagnol</label>
+                <input type="checkbox" id="allemand" name="allemand">
+                <label for="allemand">Allemand</label>
+                <input type="checkbox" id="armenien" name="armenien">
+                <label for="armenien">Arménien  </label>
+        </fieldset>
+    </section>
+
+    <section id="destination-form">
+        <fieldset>
+            <legend>Vos destinations de rêves</legend>
+                <label for="pays">Choisir votre destination :</label>
+                    <select name="pays" id="pays" multiple>
+                        <optgroup label="Outre-mer">
+                            <option value="Martinique">Martinique </option>
+                            <option value="Réunion">Réunion </option>
+                            <option value="Guadeloupe">Guadeloupe </option>
+                            <option value="Guyane">Guyane </option>
+                            <option value="Mayotte">Mayotte </option>
+                        </optgroup>
+                        <optgroup label="Etranger">
+                            <option value="New-York">New-York </option>
+                            <option value="Hawaii">Hawaii </option>
+                            <option value="Cuba">Cuba </option>
+                            <option value="Australie">Australie </option>
+                            <option value="Brésil">Brésil </option>
+                        </optgroup>
+                    </select>
+        </fieldset>
+    </section>
+    <input type="submit" value="Envoyer" id="submit">
+</body>
+</html>

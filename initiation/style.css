@@ -1,0 +1,81 @@
+/****** CSS GENERAL ********/
+
+body {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Glory", sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+/******* CLASSES GLOBALES *******/
+
+.btn {
+  text-decoration: none;
+  background-color: rgb(160, 94, 8);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 145, 0);
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+
+/****** CSS PAR SECTION ********/
+
+/* SECTION CONCEPT */
+
+#concept {
+  text-align: center;
+}
+
+#concept h2 {
+  margin: 50px auto;
+}
+
+#concept ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#concept ul li {
+  width: 25%;
+}
+
+header {
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("https://images.unsplash.com/photo-1560883389-3bd36d16d021?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 150px 50px;
+}
+
+/* SECTION SANGLIER */
+
+#sanglier {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#sanglier img {
+  width: 30%;
+  margin-right: 50px;
+}

@@ -1,0 +1,270 @@
+/*************** TYPO ********************/
+
+@font-face {
+  font-family: "Rockwell";
+  src: url(Rockwell.ttf) format("truetype");
+}
+
+/****************** CSS GLOBAL ******************/
+
+:root {
+  --rose: 234, 145, 145;
+  --bleu: 75, 73, 117;
+  --jaune: 230, 179, 49;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Rockwell;
+}
+
+/********* CLASSES GLOBALES  **************/
+
+.btn {
+  background-color: white;
+  border-radius: 50px;
+  padding: 6px 25px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  color: rgb(var(--rose));
+}
+.btn:hover {
+  background-color: rgb(var(--rose));
+  color: white;
+}
+
+.btn.btn-pink {
+  background-color: rgb(var(--rose));
+  color: white;
+}
+.btn.btn-pink:hover {
+  background-color: white;
+  color: rgb(var(--rose));
+}
+
+/****************** CSS PAR SECTIONS  *************/
+
+/******** HEADER *************/
+
+header {
+  background-image: linear-gradient(
+      to top right,
+      rgba(var(--rose), 0.7),
+      rgba(var(--bleu), 0.7)
+    ),
+    url(/img/photo.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+header::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  bottom: -25px;
+  transform: rotate(45deg);
+  left: calc(50% - 25px);
+}
+
+header nav img {
+  height: 60px;
+}
+
+header nav a {
+  color: inherit;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header .titre {
+  margin: 150px 0px;
+}
+
+header .titre h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+header .titre h2 {
+  font-family: Rockwell, serif;
+  margin: 50px 0 50px;
+}
+
+/******************* CONCEPT ************/
+
+#concept {
+  margin-top: 100px;
+}
+
+#concept h2 {
+  position: relative;
+  margin-left: 60px;
+}
+
+#concept h2::before {
+  content: "";
+  height: 180px;
+  width: 200px;
+  background-image: url(/img/grain.png);
+  background-size: cover;
+  background-color: rgb(var(--jaune));
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  z-index: -1;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+#concept ul li {
+  margin-top: 20px;
+}
+
+#concept ul li img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+#concept h2,
+#concept ul li h3 {
+  color: rgb(var(--bleu));
+  line-height: 150%;
+}
+
+/************ PRODUITS  ***************/
+
+main #produits {
+  border-radius: 25px;
+}
+
+main #produits h3 {
+  color: rgb(var(--rose));
+  margin-bottom: 50px;
+}
+
+main #produits ul li p {
+  color: rgb(var(--bleu));
+  font-family: Rockwell;
+}
+
+/************ FOOTER ***************/
+
+footer {
+  background: linear-gradient(
+    to top right,
+    rgb(var(--bleu)) -20%,
+    rgb(var(--rose)),
+    rgb(var(--jaune))
+  );
+  padding: 50px 0 10px;
+  color: white;
+}
+
+footer aside #chemin #mail {
+  margin-top: 60px;
+}
+
+footer aside #chemin #mail::before {
+  content: "";
+  height: 50px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+}
+
+footer aside #chemin #mail::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+}
+
+footer aside #chemin #pin {
+  margin-left: 70px;
+}
+
+footer aside #chemin #pin::after {
+  content: "";
+  height: 50px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+}
+
+footer aside img {
+  height: 44px;
+}
+
+footer aside p {
+  text-align: center;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+footer aside #rs {
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+footer aside #rs img {
+  margin: 0 5px;
+}
+
+footer form {
+  text-align: center;
+}
+
+footer form *:not([type="submit"]) {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: white;
+}
+
+footer form textarea {
+  height: 200px;
+}
+
+footer form ::placeholder {
+  color: white;
+}
+
+footer form input[type="submit"] {
+  margin-top: -68px;
+  position: relative;
+}

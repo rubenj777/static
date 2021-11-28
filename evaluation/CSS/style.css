@@ -1,0 +1,283 @@
+/*********************************************/
+/******************** GENERAL *****************/
+/*********************************************/
+
+h1,
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+hr {
+  color: white;
+  width: 90%;
+}
+
+/*********************************************/
+/*********** CLASSES GENERALES *************/
+/*********************************************/
+
+.container {
+  width: 1060px;
+  margin: auto;
+}
+
+.btn {
+  background-color: #970134;
+  padding: 10px 10px;
+  color: white !important;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #970134 !important;
+  border: 1px solid #970134;
+}
+
+/*********************************************/
+/************* CSS PAR SECTION *************/
+/*********************************************/
+
+/********** HEADER  ***********/
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/cinema.jpg);
+  background-size: cover;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-top: 25px;
+}
+
+header nav #burger {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+header #titre {
+  text-align: center;
+  color: white;
+  margin-top: 200px;
+}
+
+header #titre h1 {
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+/******************** CONCEPT  ************************/
+
+section #concept {
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+section #concept img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: right center;
+  margin-right: 50px;
+}
+
+section #concept ul li:last-of-type {
+  margin-top: 35px;
+}
+
+/******************** PROGRAMME  *******************/
+
+section #programme {
+  text-align: center;
+  background-image: linear-gradient(to top right, #97013370, rgba(0, 0, 0, 0.4)),
+    url(/img/salle.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 50px 0px;
+}
+
+section #programme h2 {
+  margin: 0px 0px 30px;
+}
+
+section #programme ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section #programme ul li {
+  width: 500px;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+section #programme ul li h3 {
+  margin: 0px 0px 50px;
+}
+
+section #programme ul li p {
+  margin: 25px 0px;
+}
+
+/******************* ABONNEMENTS  ********************/
+
+section #abonnements {
+  text-align: center;
+  margin-top: 50px;
+}
+
+section #abonnements h2 {
+  margin: 0px 0px 30px;
+}
+
+section #abonnements ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section #abonnements ul li {
+  width: calc(100% / 3 - 20px);
+  padding: 30px 10px;
+  background: #970134;
+  color: white;
+}
+
+/******************** FOOTER  ***********************/
+
+footer {
+  text-align: center;
+  border-top: 2px solid #970134;
+  margin-top: 50px;
+}
+
+/*********************************************/
+/************** RESPONSIVE MOBILE ************/
+/*********************************************/
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  /**************** HEADER ********************/
+
+  header {
+    background-position: 30%;
+    background-size: cover;
+  }
+
+  /**************** MENU BURGER MOBILE *****************/
+
+  header nav {
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px;
+  }
+
+  header nav ul {
+    height: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  header nav ul li {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  header nav #burger {
+    display: block;
+    appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  header nav #burger::before {
+    content: "\f0c9";
+  }
+
+  header nav #burger:checked::before {
+    content: "\f00d";
+  }
+
+  header nav #burger:checked + ul {
+    height: auto;
+  }
+
+  /******************* CONCEPT  *******************/
+
+  section #concept {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section #concept img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  /******************* PROGRAMME *******************/
+
+  section #programme ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section #programme ul li {
+    width: 100%;
+  }
+
+  section #programme ul li:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  /****************** ABONNEMENTS  *******************/
+
+  section #abonnements ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section #abonnements ul li {
+    width: 100%;
+  }
+
+  section #abonnements ul li:not(last-of-type) {
+    margin-bottom: 50px;
+  }
+}

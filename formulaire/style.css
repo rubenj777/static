@@ -1,0 +1,107 @@
+/* GENERAL */
+
+* {
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+body {
+  background-image: linear-gradient(
+      45deg,
+      rgba(226, 153, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+fieldset {
+  border: black solid 1px;
+}
+
+/* COORDONNEES */
+
+#coordonnees {
+  display: block;
+}
+
+#coordonnees fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+#coordonnees fieldset input {
+  width: 15%;
+}
+
+/****** INFOS PERSOS ******/
+
+#infos-perso {
+  display: block;
+}
+
+#infos-perso #name-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#infos-perso #name-form input {
+  width: 15%;
+}
+
+#infos-perso #gender {
+  display: flex;
+  align-items: center;
+}
+
+#homme,
+#femme {
+  margin-left: 50px;
+}
+
+#localisation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#localisation-form input,
+#localisation-form select {
+  width: 15%;
+}
+
+#localisation-form #postal-code {
+  width: 5%;
+}
+
+#budget-form {
+  display: flex;
+  align-items: center;
+}
+
+#budget-form span:first-of-type {
+  margin: 0px 10px 0px 50px;
+}
+
+#budget-form span:last-of-type {
+  margin: 0px 10px;
+}
+
+/* LANGUES */
+
+#langages {
+  display: flex;
+  flex-direction: column;
+}
+
+/* DESTINATION */
+
+#destination-form fieldset {
+  display: flex;
+}
+
+/* BOUTON */
+
+#submit {
+  margin: 10px 0px;
+}
